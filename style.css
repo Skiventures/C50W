@@ -1,0 +1,101 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.index h1 {
+    color: blue;
+}
+
+.image h1 {
+    color: green;
+}
+
+.advance h1 {
+    color: red;
+}
+
+ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+}
+
+/* Styles for horizontal list */
+.header-list li {
+    float: right; /* Float list items to the left */
+    margin-right: 10px; /* Space between items */
+}
+
+.header-list li a {
+    color: #000;
+    display: block;
+    text-align: center;
+    padding: 20px 10px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.header-list li a:hover {
+    text-decoration: underline;
+}
+
+/* Clear floats after the list */
+.header-list::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Styles for vertical list */
+.vertical-list li {
+    display: block; /* Ensure list items are block-level */
+    margin: 5px 0; /* Add spacing between items */
+    text-align: left; /* Ensure text aligns to the left */
+  width: 2000px;
+}
+
+.vertical-list label {
+    display: inline-block; /* Ensure labels and inputs are on the same line */
+    width: 200px; /* Fixed width for labels */
+    text-align: left; /* Ensure text aligns to the left */
+}
+
+.vertical-list input[type="text"] {
+    width: 500px; /* Adjust width based on label width */
+    padding: 10px;
+    text-align: left; /* Ensure text aligns to the left */
+}
+
+/* Additional form styles */
+form {
+    max-width: 2000px; /* Optional: limit the form width */
+    margin: 50px; /* where the form starts */
+}
+
+input[type="submit"] {
+    background-color: #f5f5f5;
+    border: none;
+    color: #707070;
+    font-size: 15px;
+    padding: 10px 20px;
+    margin: 50px 0;
+    border-radius: 4px;
+    outline: none;
+    cursor: pointer; /* Add pointer cursor on hover */
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.title {
+    font-size: 18px; /* Adjust the font size */
+    font-weight: bold; /* Make the text bold */
+    text-align: left; /* Center the text */
+    margin-bottom: 10px; /* Add space below the title */
+    margin: 50px;
+    color: #333; /* Set the text color */
+}
